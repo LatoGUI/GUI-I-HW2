@@ -1,0 +1,137 @@
+/*
+    File: pacific.css
+    GUI Assignment: HW2 - Style a Site with External CSS
+    Platon Supranovich, UMass Lowell Computer Science, Platon_Supranovich@student.uml.edu
+    Copyright (c) 2025 by Platon. All rights reserved. May be freely copied or
+    excerpted for educational purposes with credit to the author.
+    updated by PS on September 27, 2025 at 8:00 AM
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/* Base styling for the body of the document */
+body {
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("ptrbackground.jpg");
+	background-position: top;
+	background-repeat: repeat-x;
+	width: 100%;
+}
+
+/* Main grid container for the layout */
+#wrapper {
+	display: grid;
+	grid-template-columns: 200px 1fr; 
+	grid-template-areas:
+		"header header"
+		"nav content"
+		"nav footer";
+	width: 80%;
+	min-width: 600px;
+	margin: 20px auto;
+	background-color: #90c8e3;
+}
+
+/* Header styling */
+header {
+	grid-area: header;
+	background-color: #000034;
+	color: white;
+	background-image: url("sunset.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+/* Navigation styling */
+nav {
+	grid-area: nav;
+	background-color: #90c8e3;
+}
+
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+}
+
+nav a {
+	color: #000034;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/* Content section styling */
+#content {
+	grid-area: content;
+	background-color: white;
+	padding: 5px 20px;
+}
+
+#content img {
+	float: left;
+	margin-right: 20px;
+}
+
+#content p,
+#content ul {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+#content ul {
+	list-style-image: url('marker.gif');
+}
+
+/* Heading styles */
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Special span class for resort name */
+.resort {
+	font-weight: bold;
+	font-size: 108%;
+	color: #597dbb;
+}
+
+/* Contact section */
+#contact {
+	font-size: 90%;
+}
+
+/* Definition term style */
+dt {
+	color: #000033;
+}
+
+/* Footer styling */
+footer {
+	grid-area: footer;
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: white;
+	font-style: italic;
+	font-size: 85%;
+	padding: 20px;
+}
